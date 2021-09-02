@@ -1,4 +1,4 @@
-Package Group25
+package Group25
 
 import java.io.*;
 import java.util.Scanner;
