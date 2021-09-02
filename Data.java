@@ -1,4 +1,4 @@
-package project1;
+Package Group25
 
 import java.io.*;
 import java.util.Scanner;
