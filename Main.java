@@ -52,6 +52,7 @@ public class Main
                 }
                 row++;
             }
+            System.out.print("\n");
             System.out.println("Start date: " + day1);
             System.out.println("End date: " + day2);
             System.out.println("Number of days: " + (date) + " days");
