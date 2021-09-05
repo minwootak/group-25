@@ -49,7 +49,7 @@ public class Frame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 int i = fileChooser.showOpenDialog(Frame.this);
                 if(i == JFileChooser.APPROVE_OPTION) {
-                    System.out.println(".file choosed");
+                    System.out.println("file choosed");
                     File file = fileChooser.getSelectedFile();
                     System.err.println(file);
                     ArrayList<String[]> rows = readCSV(file);
@@ -65,14 +65,14 @@ public class Frame extends JFrame {
     private ArrayList<String[]> readCSV(File file) {
         ArrayList<String[]> data = new ArrayList<>();
         try {
-        FileReader fileReader =  new FileReader(file);
-        CSVReader csvReader = new CSVReader(fileReader);
-        Iterator<String[]> rows =  csvReader.iterator();
-        while(rows.hasNext()) {
-            String[] cols = rows.next();
-            data.add(cols);
-        }
-        System.out.println("Frame.readCSV()" + data.size());
+            FileReader fileReader =  new FileReader(file);
+            CSVReader csvReader = new CSVReader(fileReader);
+            Iterator<String[]> rows =  csvReader.iterator();
+            while(rows.hasNext()) {
+                String[] cols = rows.next();
+                data.add(cols);
+            }
+            System.out.println("Frame.readCSV: " + data.size());
 
         }catch (Exception ex) {
             ex.printStackTrace();
