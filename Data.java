@@ -16,7 +16,7 @@ public class Data
 		Date day1;
 		Date day2;
 		String[] temp = new String[8];
-		String path = "D:\\assignment\\covid-data.csv"; //Put the location of covid-data.csv //
+		String path = ""; //Put the location of covid-data.csv //
 		String[] index = new String[110000];
 		SimpleDateFormat SDF = new SimpleDateFormat("MM/dd/yyyy");
 		try
